@@ -1,5 +1,8 @@
 source 'https://rubygems.org'
 
+#gema de heroku
+gem 'rails_12factor', group: :production
+
 gem 'puma'
 gem 'devise'
 gem 'bootstrap-sass', '~> 3.3.5'
