@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nombre Completo:</strong>
+  <%= @runner.nombre %>
+</p>
+
+<p>
+  <strong>Edad:</strong>
+  <%= @runner.edad %>
+</p>
+
+<p>
+  <strong>Club o Team:</strong>
+  <%= @runner.club %>
+</p>
+
+<p>
+  <strong>Ciudad:</strong>
+  <%= @runner.ciudad %>
+</p>
+
+<p>
+  <strong>País:</strong>
+  <%= @runner.pais %>
+</p>
+
+<p>
+  <strong>Correo:</strong>
+  <%= @runner.correo %>
+</p>
+
+<p>
+  <strong>Alérgico a:</strong>
+  <%= @runner.alergico %>
+</p>
+
+<p>
+  <strong>Declaración:</strong>
+  <%= @runner.declaracion %>
+</p>
+<% runid = @runner.category_id %>
+<% categoria = Category.find(runid) %>
+<p>
+  <strong>Categoría:</strong>
+  <%= categoria.nombre %> <%= categoria.edad %> <%= categoria.distancia %>
+</p>
+
+<%= link_to 'Volver al inicio', 'http://www.conquistachile.cl' %>

@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nombre: MyString
+  edad: 1
+  club: MyString
+  ciudad: MyString
+  pais: MyString
+  correo: MyString
+  alergico: MyString
+  declaracion: false
+  category_id: 
+
+two:
+  nombre: MyString
+  edad: 1
+  club: MyString
+  ciudad: MyString
+  pais: MyString
+  correo: MyString
+  alergico: MyString
+  declaracion: false
+  category_id: 
