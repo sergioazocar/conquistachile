@@ -1,5 +1,7 @@
+<% if user_signed_in? %>
 <p id="notice"><%= notice %></p>
-
+<%= link_to "Cerrar sesión", destroy_user_session_path, method: :delete%></br>
+<%= link_to "Cambiar contraseña", edit_user_registration_path %>
 <h1>Lista de Corredores</h1>
 
 <%= link_to 'Agregar Corredor', new_runner_path, :class => 'btn btn-success' %>
@@ -44,3 +46,8 @@
     </tbody>
   </table>
 </div>
+<% else %>
+
+<p class="text-danger">No estás autorizado para acceder a este contenido.</p>
+
+<% end %>
