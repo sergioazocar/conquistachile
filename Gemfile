@@ -7,6 +7,7 @@ gem 'devise-i18n'
 gem 'puma'
 gem 'devise'
 gem 'bootstrap-sass', '~> 3.3.5'
+gem 'font-awesome-sass', '~> 4.3.0'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.1'
 #sqlite para desarrollo
