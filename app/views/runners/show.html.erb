@@ -39,7 +39,10 @@
 
     <p>
       <strong>Declaración:</strong>
-      <%= @runner.declaracion %>
+      <% if @runner.declaracion==true %>
+      <% rundeclaracion = "Acepto" %>
+      <% end %>
+      <%= rundeclaracion %>
     </p>
     <% runid = @runner.category_id %>
     <% categoria = Category.find(runid) %>
