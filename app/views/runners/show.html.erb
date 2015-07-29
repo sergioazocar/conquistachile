@@ -1,49 +1,70 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Nombre Completo:</strong>
-  <%= @runner.nombre %>
-</p>
+<div class="row">
+  <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+    <p>
+      <strong>Nombre Completo:</strong>
+      <%= @runner.nombre %>
+    </p>
 
-<p>
-  <strong>Edad:</strong>
-  <%= @runner.edad %>
-</p>
+    <p>
+      <strong>Edad:</strong>
+      <%= @runner.edad %>
+    </p>
 
-<p>
-  <strong>Club o Team:</strong>
-  <%= @runner.club %>
-</p>
+    <p>
+      <strong>Club o Team:</strong>
+      <%= @runner.club %>
+    </p>
 
-<p>
-  <strong>Ciudad:</strong>
-  <%= @runner.ciudad %>
-</p>
+    <p>
+      <strong>Ciudad:</strong>
+      <%= @runner.ciudad %>
+    </p>
 
-<p>
-  <strong>País:</strong>
-  <%= @runner.pais %>
-</p>
+    <p>
+      <strong>País:</strong>
+      <%= @runner.pais %>
+    </p>
 
-<p>
-  <strong>Correo:</strong>
-  <%= @runner.correo %>
-</p>
+    <p>
+      <strong>Correo:</strong>
+      <%= @runner.correo %>
+    </p>
 
-<p>
-  <strong>Alérgico a:</strong>
-  <%= @runner.alergico %>
-</p>
+    <p>
+      <strong>Alérgico a:</strong>
+      <%= @runner.alergico %>
+    </p>
 
-<p>
-  <strong>Declaración:</strong>
-  <%= @runner.declaracion %>
-</p>
-<% runid = @runner.category_id %>
-<% categoria = Category.find(runid) %>
-<p>
-  <strong>Categoría:</strong>
-  <%= categoria.nombre %> <%= categoria.edad %> <%= categoria.distancia %>
-</p>
+    <p>
+      <strong>Declaración:</strong>
+      <%= @runner.declaracion %>
+    </p>
+    <% runid = @runner.category_id %>
+    <% categoria = Category.find(runid) %>
+    <p>
+      <strong>Categoría:</strong>
+      <%= categoria.nombre %> <%= categoria.edad %> <%= categoria.distancia %>
+    </p>
+  </div>
+  <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+    <div class="pago">
+      <h3>FORMA DE PAGO</h3>
+      <p>Depositar o transferir a nombre de: CONQUISTA CHILE SpA</p>
+
+      <p>Rut: 76.377.733-2, Cuenta Vista Nº 81570990934</p>
+
+      <p>Banco Estado</p>
+
+      <p><strong>Enviar comprobante de pago al mail <span><a href="mailto:info@conquistachile.cl">info@conquistachile.cl</a></span></strong></p>
+
+      <blockquote>Una vez confirmado el depósito, el corredor se considera inscrito.</blockquote>
+    </div>
+  </div>
+</div>
+
+
+
 
 <%= link_to 'Volver al inicio', 'http://www.conquistachile.cl' %>
