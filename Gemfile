@@ -2,6 +2,8 @@ source 'https://rubygems.org'
 
 #gema de heroku
 gem 'rails_12factor', group: :production
+#gema excel
+gem 'axlsx_rails'
 
 gem 'devise-i18n'
 gem 'puma'

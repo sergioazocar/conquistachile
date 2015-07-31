@@ -1,0 +1,12 @@
+wb = xlsx_package.workbook
+wb.add_worksheet(name: "Runners") do |sheet|
+  sheet.add_row ['Nombre', 'Edad', 'Team', 'Ciudad', 'País', 'Correo', 'Alérgico a', 'Declaración ', 'Categoría']
+  @runners.each do |runner|
+  	runid = runner.category_id
+  	categoria = Category.find(runid)
+  	if runner.declaracion==true
+  		rundeclaracion = "Acepto"
+  	end
+    sheet.add_row [runner.nombre, runner.edad, runner.club, runner.ciudad, runner.pais, runner.correo, runner.alergico, rundeclaracion, "#{categoria.nombre} #{categoria.edad} #{categoria.distancia}"]
+  end
+end

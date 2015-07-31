@@ -6,6 +6,10 @@ class RunnersController < ApplicationController
   def index
     @runners = Runner.all
     @category = Category.all
+    respond_to do |format|
+      format.html
+      format.xlsx { render xlsx: "corredores", template: "runners/index" }
+    end
   end
 
   # GET /runners/1
