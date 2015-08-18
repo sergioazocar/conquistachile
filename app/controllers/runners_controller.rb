@@ -9,6 +9,7 @@ class RunnersController < ApplicationController
     respond_to do |format|
       format.html
       format.xlsx { render xlsx: "corredores", template: "runners/index" }
+      format.json { render json: Runner.all}
     end
   end
 
