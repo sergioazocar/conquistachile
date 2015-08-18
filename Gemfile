@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 gem 'rails_12factor', group: :production
 #gema excel
 gem 'axlsx_rails'
-
+gem 'rack-cors', :require => 'rack/cors'
 gem 'devise-i18n'
 gem 'puma'
 gem 'devise'
