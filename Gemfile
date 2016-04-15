@@ -1,5 +1,8 @@
 source 'https://rubygems.org'
 
+gem 'jquery-datatables-rails'
+gem 'ajax-datatables-rails'
+gem "kaminari"
 #gema de heroku
 gem 'rails_12factor', group: :production
 #gema excel

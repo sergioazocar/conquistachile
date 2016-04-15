@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :casas
+  resources :cars
   devise_for :users
   resources :runners
   # The priority is based upon order of creation: first created -> highest priority.
